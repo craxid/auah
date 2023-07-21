@@ -1,6 +1,6 @@
 module.exports = {
     name: "menu",
-    alias: ["help","?","menu"],
+    alias: ["help","?","menu","akebi"],
     desc: "List all command",
     type: "main",
     start: async(killua, m, { commands, args, prefix, text, toUpper }) => {
@@ -47,7 +47,7 @@ module.exports = {
                 {buttonId: `profile`, buttonText: {displayText: 'Profile'}, type: 1}
             ]
             let buttonMessage = {
-                image: { url: 'https://camo.githubusercontent.com/23f3195d91e7095ae37ef6a22475b9f1206f8334bc3e5ca61637f7d7e8cf962a/68747470733a2f2f692e70696e696d672e636f6d2f373336782f66662f38372f62372f66663837623730653963396465613464396361333263393533386138316333622e6a7067' },
+                image: { url: 'https://genix.eu.org/akebi.jpg' },
                 caption: teks,
                 footer: config.footer,
                 buttons: buttons,
