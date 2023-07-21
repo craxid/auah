@@ -1,7 +1,7 @@
 {
   "APIs": {
     "zenz": "https://api.zahwazein.xyz",
-    "apikey": "YOURAPIKEY"
+    "apikey": "zenzkey_f59c1aacf2"
   },
   "options": {
     "autoRead": true,
@@ -10,11 +10,11 @@
     "limitGame": 20
   },
   "exif": {
-    "packname": "Killua Zoldyck",
-    "author": "https://api.zahwazein.xyz"
+    "packname": "Sticker Maker",
+    "author": "Akebi Bot| 62 831-5593-6234"
   },
   "owner": [
-    "62812XXX"
+    "6285892734104"
   ],
   "timezone": "Asia/Jakarta",
   "footer": "Powered by https://api.zahwazein.xyz"
