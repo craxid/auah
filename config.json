@@ -6,8 +6,8 @@
   "options": {
     "autoRead": true,
     "self": false,
-    "limitCount": 20,
-    "limitGame": 20
+    "limitCount": 50,
+    "limitGame": 50
   },
   "exif": {
     "packname": "Sticker Maker",
