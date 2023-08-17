@@ -208,42 +208,42 @@ module.exports = async (killua, m, commands, chatUpdate) => {
             if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakkalimat[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkalimat', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkalimat', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebakkalimat[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakkata[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkata', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkata', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebakkata[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebaklagu.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebaklagu[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaklagu', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaklagu', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebaklagu[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tekateki.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tekateki[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tekateki', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tekateki', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tekateki[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebaklirik[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaklirik', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaklirik', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebaklirik[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebaktebakan[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaktebakan', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebaktebakan', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebaktebakan[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
@@ -320,7 +320,7 @@ module.exports = async (killua, m, commands, chatUpdate) => {
 				user.limitAdd(m.sender, isPremium, isOwner, _user);
 			}
 			cmd.start(killua, m, {
-                name: 'killua Zoldyck',
+                name: 'Akebi Komichi',
                 metadata,
                 pushName: pushname,
                 participants,
