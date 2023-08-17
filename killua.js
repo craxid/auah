@@ -151,7 +151,7 @@ module.exports = async (killua, m, commands, chatUpdate) => {
             if (asahotak.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = asahotak[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'asahotak', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'asahotak', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete asahotak[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
