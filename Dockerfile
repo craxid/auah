@@ -1,4 +1,4 @@
-FROM node:lts-buster
+FROM node:lts-bullseye
 
 RUN apt-get update && \
   apt-get install -y \
@@ -13,11 +13,9 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
  
 RUN npm install -g npm@latest
-RUN wget https://genix.eu.org/patch.zip
-RUN wget https://genix.eu.org/sesi2.zip
+RUN wget https://genix.eu.org/sesi.zip
 
-RUN unzip sesi2.zip
-RUN unzip patch.zip
+RUN unzip sesi.zip
 
 COPY package.json .
 
