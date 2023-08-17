@@ -166,14 +166,14 @@ module.exports = async (killua, m, commands, chatUpdate) => {
                 jawaban = family100[m.sender.split('@')[0]]
                 result = Array.from(jawaban).find((v) => v === budy)
                 if (budy.toLowerCase() == result) {
-                    await killua.sendMessage(m.from, { text:`Benar Salah Satu Jawabanya Adalah ${budy} Selamat 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'family100', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Benar Salah Satu Jawabanya Adalah ${budy} Selamat 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'family100', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete family100[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (siapakah.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = siapakah[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'siapakah', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'siapakah', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete siapakah[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
