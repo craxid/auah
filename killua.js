@@ -194,21 +194,21 @@ module.exports = async (killua, m, commands, chatUpdate) => {
             if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakgambar[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakgambar', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakgambar', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebakgambar[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebakkabupaten.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakkabupaten[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkabupaten', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`/*, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkabupaten', buttonText:{ displayText:'Lanjut'}, type:1 }]*/, headerType:4 }, { quoted: m })
                     delete tebakkabupaten[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
             if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakkalimat[m.sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n\nIngin bermain lagi? Tekan Tombol Lanjut dibawah\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkalimat', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
+                    await killua.sendMessage(m.from, { text:`Selamat Jawaban ${budy} Benar 🎉\n`, footer:`Entertainment\n${config.footer}`, buttons:[{ buttonId:'tebakkalimat', buttonText:{ displayText:'Lanjut'}, type:1 }], headerType:4 }, { quoted: m })
                     delete tebakkalimat[m.sender.split('@')[0]]
                 } else m.reply('*Jawaban Salah!*')
             }
