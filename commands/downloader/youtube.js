@@ -15,10 +15,10 @@ module.exports = {
         caption += `⭔ Title : ${i.title}\n`
         caption += `⭔ source : ${i.source}\n`
         caption += `⭔ duration : ${i.duration}\n\n`
-        let buttons = [
+        /*let buttons = [
             {buttonId: `dl audio ${i.getAudio}`, buttonText: { displayText: 'Get Audio'}, type: 1 },
             {buttonId: `dl ${i.getVideo}`, buttonText: { displayText: 'Get Video'}, type: 1 }
-        ]
+        ]*/
         let buttonMessage = {
             image: { url: i.thumb },
             caption: caption,
