@@ -10,13 +10,13 @@ module.exports = {
         /*let buttons = [
             {buttonId: `randomanime ${text}`, buttonText: { displayText: 'NEXT'}, type: 1 }
         ]*/
-        let buttonMessage = {
+        /*let buttonMessage = {
             image: { url: fetch },
             caption: `Random Anime ${toUpper(text)}`,
             footer: config.footer,
             buttons: buttons,
             headerType: 4
-        }
+        }*/
         killua.sendMessage(m.from, buttonMessage, { quoted: m })
     },
     isQuery: true
