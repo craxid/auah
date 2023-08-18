@@ -1,6 +1,6 @@
 module.exports = {
     name: "randomanime",
-    alias: ["animerandom","anime","waifu","husbu","neko","shinobu","megumin","uniform","maid","marin-kitagawa","mori-calliope","raiden-shogun","oppai","selfies","waifus","nekos","trap","blowjob","hentai","milf","oral","paizuri","ecchi","ero"],
+    alias: ["animerandom"],
     use: "<query>",
     desc: "Generate Random Anime Image From Apis",
     type: "randomanime",
