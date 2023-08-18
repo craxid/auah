@@ -12,14 +12,14 @@ module.exports = {
         let random = fetch.result[Math.floor(Math.random() * fetch.result.length)]
         /*let buttons = [
             {buttonId: `pin ${text}`, buttonText: { displayText: 'Next Image'}, type: 1 }
-        ]*/  
+        ]
         let buttonMessage = {
             image: { url: random },
             caption: `Search Pinterest Query : ${toUpper(text)}`,
             footer: config.footer,
             buttons: buttons,
             headerType: 4
-        }
+        }*/
         killua.sendMessage(m.from, buttonMessage, { quoted: m })
     },
     isQuery: true
