@@ -7,9 +7,9 @@ module.exports = {
     example: `\nList Type :\n\n${type().sort((a, b) => a - b).join("\n")}\n\nExample : %prefix%command <type>`,
     start: async(killua, m, { text, toUpper }) => {
         let fetch = await global.api("zenz", "/randomanime/" + text, {}, "apikey")
-        let buttons = [
+        /*let buttons = [
             {buttonId: `randomanime ${text}`, buttonText: { displayText: 'NEXT'}, type: 1 }
-        ]
+        ]*/
         let buttonMessage = {
             image: { url: fetch },
             caption: `Random Anime ${toUpper(text)}`,
