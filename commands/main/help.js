@@ -24,7 +24,7 @@ module.exports = {
                 teks += `│\n`
                 teks += `${commands.list[type].filter(v => v.type !== "hide").map((cmd) => `│📌 ${prefix + cmd.name} ${cmd.use ? " " + cmd.use : ""}`).join("\n")}\n`
                 teks += `│\n`
-                teks += `└───────⭓\n\n`
+                teks += `└───────💠\n\n`
             }
 
             teks += `Send ${prefix}help followed by a command name to get detail of command, ex: ${prefix}help sticker`;
