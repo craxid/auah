@@ -21,7 +21,7 @@ module.exports = {
             caption += `⭔ Source : ${i.source}\n`
             caption += `⭔ Duration : ${i.duration}\n`
             caption += `⭔ Link: ${i.url}`
-            
+            caption += ``
             caption += `⭔ Ketik .dl dan masukan link diatas untuk mendownload`
             /*let buttons = [
                 { buttonId: `play ${i.getAudio} audio`, buttonText: { displayText: 'Get Audio' }, type: 1 },
