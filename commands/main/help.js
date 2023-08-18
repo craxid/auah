@@ -22,7 +22,7 @@ module.exports = {
             for (let type of commands.type) {
                 teks += `┌──⭓ *${toUpper(type)} Menu*\n`
                 teks += `│\n`
-                teks += `${commands.list[type].filter(v => v.type !== "hide").map((cmd) => `│⭔ ${prefix + cmd.name} ${cmd.use ? " " + cmd.use : ""}`).join("\n")}\n`
+                teks += `${commands.list[type].filter(v => v.type !== "hide").map((cmd) => `│📌 ${prefix + cmd.name} ${cmd.use ? " " + cmd.use : ""}`).join("\n")}\n`
                 teks += `│\n`
                 teks += `└───────⭓\n\n`
             }
