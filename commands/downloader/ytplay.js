@@ -20,9 +20,9 @@ module.exports = {
             caption += `⭔ Title : ${i.title}\n`
             caption += `⭔ Source : ${i.source}\n`
             caption += `⭔ Duration : ${i.duration}\n`
-            caption += `⭔ Link: ${i.url}
+            caption += `⭔ Link: ${i.url}`
             
-            caption +=`⭔ Ketik .dl dan masukan link diatas untuk mendownload`
+            caption += `⭔ Ketik .dl dan masukan link diatas untuk mendownload`
             /*let buttons = [
                 { buttonId: `play ${i.getAudio} audio`, buttonText: { displayText: 'Get Audio' }, type: 1 },
                 { buttonId: `play ${i.getVideo} video`, buttonText: { displayText: 'Get Video' }, type: 1 }
