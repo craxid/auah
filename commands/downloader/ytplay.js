@@ -19,8 +19,8 @@ module.exports = {
             let i = fetch.result
             caption += `⭔ Title : ${i.title}\n`
             caption += `⭔ Source : ${i.source}\n`
-            caption += `⭔ Duration : ${i.duration}\n
-            caption += `⭔ Link: $`
+            caption += `⭔ Duration : ${i.duration}\n`
+            caption += `⭔ Link: ${i.url}`
             /*let buttons = [
                 { buttonId: `play ${i.getAudio} audio`, buttonText: { displayText: 'Get Audio' }, type: 1 },
                 { buttonId: `play ${i.getVideo} video`, buttonText: { displayText: 'Get Video' }, type: 1 }
