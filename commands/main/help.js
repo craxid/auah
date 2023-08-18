@@ -20,11 +20,11 @@ module.exports = {
             let teks = `Hello, ${pushName === undefined ? sender.split("@")[0] : pushName}\nHere is the Command List\n\n`
 
             for (let type of commands.type) {
-                teks += `┌──🔰 *${toUpper(type)} Menu*\n`
+                teks += `┌── *${toUpper(type)} Menu*\n`
                 teks += `│\n`
-                teks += `${commands.list[type].filter(v => v.type !== "hide").map((cmd) => `│📌 ${prefix + cmd.name} ${cmd.use ? " " + cmd.use : ""}`).join("\n")}\n`
+                teks += `${commands.list[type].filter(v => v.type !== "hide").map((cmd) => `│ ${prefix + cmd.name} ${cmd.use ? " " + cmd.use : ""}`).join("\n")}\n`
                 teks += `│\n`
-                teks += `└───────💠\n\n`
+                teks += `└───────\n\n`
             }
 
             teks += `Send ${prefix}help followed by a command name to get detail of command, ex: ${prefix}help sticker`;
