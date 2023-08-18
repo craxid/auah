@@ -46,8 +46,8 @@ module.exports = {
                 {buttonId: `verify`, buttonText: {displayText: 'Verify'}, type: 1},
                 {buttonId: `profile`, buttonText: {displayText: 'Profile'}, type: 1}
             ]
-            let buttonMessage = {
-                image: { url: 'https://genix.eu.org/akebi_bot.jpg' },
+    let buttonMessage = {
+    image: { url: 'https://genix.eu.org/akebi.jpg' },
                 caption: teks,
                 footer: config.footer,
                 buttons: buttons,
