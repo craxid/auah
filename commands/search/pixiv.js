@@ -11,16 +11,16 @@ module.exports = {
         if (text) {
             let fetch = await fetchUrl(global.api("zenz", "/searching/pixiv", { query: text }, "apikey"))
             let random = fetch.result[0]
-            let buttons = [
+            /*let buttons = [
                 {buttonId: `pixiv ${text}`, buttonText: { displayText: 'Next Image'}, type: 1 }
-            ]
-            let buttonMessage = {
+            ]*/
+            /*let buttonMessage = {
                 image: { url: "https://external-content.duckduckgo.com/iu/?u=" + random.urls.regular },
                 caption: `Search Pixiv Image Query : ${toUpper(text)}`,
                 footer: config.footer,
                 buttons: buttons,
                 headerType: 4
-            }
+            }*/
             killua.sendMessage(m.from, buttonMessage, { quoted: m })
         } else {
             let fetch = await fetchUrl(global.api("zenz", "/searching/pixiv/random", {}, "apikey"))
