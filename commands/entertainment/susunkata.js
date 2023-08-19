@@ -13,7 +13,7 @@ module.exports = {
             susunkata[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
             console.log("Jawaban: " + result.jawaban)
         })
-        await sleep(30000)
+        await sleep(60000)
         if (susunkata.hasOwnProperty(m.sender.split('@')[0])) {
             killua.sendText(m.from, `Waktu Habis\n\nJawaban:  ${susunkata[m.sender.split('@')[0]]}`, m)
             delete susunkata[m.sender.split('@')[0]]
