@@ -13,7 +13,7 @@ module.exports = {
             family100[m.sender.split('@')[0]] = result.jawaban
             console.log("Jawaban: " + result.jawaban)
         })
-        await sleep(30000)
+        await sleep(60000)
         if (family100.hasOwnProperty(m.sender.split('@')[0])) {
             killua.sendText(m.from, `Waktu Habis\n\nJawaban:  ${family100[m.sender.split('@')[0]]}`, m)
             delete family100[m.sender.split('@')[0]]
