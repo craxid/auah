@@ -13,7 +13,7 @@ module.exports = {
             tebakbendera[m.sender.split('@')[0]] = result.name.toLowerCase()
             console.log("Jawaban: " + result.name)
         })
-        await sleep(30000)
+        await sleep(60000)
         if (tebakbendera.hasOwnProperty(m.sender.split('@')[0])) {
             killua.sendText(m.from, `Waktu Habis\n\nJawaban:  ${tebakbendera[m.sender.split('@')[0]]}`, m)
             delete tebakbendera[m.sender.split('@')[0]]
