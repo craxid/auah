@@ -13,7 +13,7 @@ module.exports = {
             caklontong[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
             console.log("Jawaban: " + result.jawaban)
         })
-        await sleep(30000)
+        await sleep(60000)
         if (caklontong.hasOwnProperty(m.sender.split('@')[0])) {
             killua.sendText(m.from, `Waktu Habis\n\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nKeterangan: ${result.deskripsi}`, m)
             delete caklontong[m.sender.split('@')[0]]
