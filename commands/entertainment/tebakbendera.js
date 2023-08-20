@@ -9,7 +9,7 @@ module.exports = {
         if (tebakbendera.hasOwnProperty(m.sender.split('@')[0])) return m.reply("Masih Ada Sesi Yang Belum Diselesaikan!")
         let fetch = await fetchUrl(global.api("zenz", "/entertainment/tebakbendera", {}, "apikey"))
         let result = await fetch.result
-        killua.sendFile(m.from, result.img, "", m, { caption: `Silahkan Jawab Pertanyaan Berikut\n\nDeskripsi: ${result.flag}\nWaktu : 30s`}).then(() => {
+        killua.sendFile(m.from, result.img, "", m, { caption: `Silahkan Jawab Pertanyaan Berikut\n\nDeskripsi: ${result.flag}\nWaktu : 60 detik`}).then(() => {
             tebakbendera[m.sender.split('@')[0]] = result.name.toLowerCase()
             console.log("Jawaban: " + result.name)
         })
