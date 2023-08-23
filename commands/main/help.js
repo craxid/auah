@@ -42,10 +42,10 @@ module.exports = {
                 templateButtons: templateButtons
             }*/
             
-                /*let buttons = [
+                let buttons = [
                 {buttonId: `verify`, buttonText: {displayText: 'Verify'}, type: 1},
                 {buttonId: `profile`, buttonText: {displayText: 'Profile'}, type: 1}
-            ]*/
+            ]
     let buttonMessage = {
     image: { url: 'https://genix.eu.org/akebi.jpg' },
                 caption: teks,
