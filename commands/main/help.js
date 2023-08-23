@@ -46,6 +46,13 @@ module.exports = {
                 {buttonId: `verify`, buttonText: {displayText: 'Verify'}, type: 1},
                 {buttonId: `profile`, buttonText: {displayText: 'Profile'}, type: 1}
             ]
+            
+            try {
+			var pp = await killua.profilePictureUrl(m.sender, "image");
+		} catch {
+			var pp = "https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png";
+		}
+            
     let buttonMessage = {
     image: { url: 'https://genix.eu.org/akebi.jpg' },
                 caption: teks,
@@ -55,7 +62,7 @@ module.exports = {
             }
             
             // killua.sendMessage(m.from, teks, { quoted: m })
-            killua.sendText(m.from, teks, m)
+            killua.sendText(m.from, pp, teks, m)
         }
     },
     noLimit: true,
