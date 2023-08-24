@@ -47,11 +47,6 @@ module.exports = {
                 {buttonId: `profile`, buttonText: {displayText: 'Profile'}, type: 1}
             ]
             
-            try {
-			var pp = await killua.profilePictureUrl(m.sender, "image");
-		} catch {
-			var pp = "https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png";
-		}
             
     let buttonMessage = {
     image: { url: 'https://genix.eu.org/akebi.jpg' },
